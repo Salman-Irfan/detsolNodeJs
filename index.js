@@ -19,6 +19,10 @@ app.use(cors());
 
 // available routes
 // Use the base route from /routes/index.js
+app.get('/', (req, res) => {
+    res.send('Detsol Interview Problem')
+})
+
 app.use('/', require('./routes'));
 
 // liseten server to port
